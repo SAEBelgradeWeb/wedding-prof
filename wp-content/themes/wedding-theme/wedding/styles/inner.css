@@ -1,0 +1,217 @@
+/* 
+
+Wedding - CSS File
+
+USE THIS STYLE SHEET FOR INNER PAGE
+
+*/
+
+
+
+/* Page Navi*/
+.wp-pagenavi {padding:0px 0 0; font-size:13px; display:block; margin-bottom:20px;}
+.wp-pagenavi .pages{padding-right:10px; display:inline-block}
+.wp-pagenavi a, .wp-pagenavi a:visited{padding:6px 11px; margin:0 4px;}
+.wp-pagenavi .current_page_item{padding:6px 11px; margin:0 4px;}
+
+
+
+/* BLOG */
+.post{ margin-top:5px; margin-bottom:60px; padding-bottom:67px; }
+.post.last{ background:none; padding-bottom:0px; margin-bottom:50px;}
+.single .post{ padding-bottom:20px;}
+.post .header-wrapper{ padding-left:80px; }
+
+.posttitle{ margin-top:13px; margin-bottom:4px;}
+.posttitle, .posttitle a{font-size:20px;}
+.posttitle a:hover{text-decoration:none;}
+
+.gallery .posttitle{ margin-top:5px; margin-bottom:10px;}
+.gallery .entry-content{ padding-bottom:0px; padding-left:10px;}
+.gallery .post{ padding-bottom:48px;}
+.gallery .post.last{ padding-bottom:0px; }
+
+.postimg{ float:left; margin-right:30px; width:38.5% }
+
+.entry-utility{padding:0px 0 8px 0; clear:both; font-size:11px;}
+
+.date-wrapper{ float:left; position:relative; text-align:center; width: 55px; margin-right:21px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.line-date{ position:absolute; width:55px; height:10px; top:20px}
+.date-wrapper .date-value {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 12px 0 9px 0;
+	text-shadow: #000 0px 1px 4px;
+}
+.date-wrapper .month-value {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.entry-content { overflow:hidden; padding-right:10px; padding-bottom:20px; }
+
+
+.author{ padding:15px 0px 9px; margin-bottom:45px;}
+.author .avatar{ float:left; margin-right:30px;}
+.author .fn{ padding-bottom:10px; display:block}
+
+.related-post{margin-bottom:20px; float:left}
+
+#comment h3{ display:block;}
+.commentlist{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.commentlist ol{
+	list-style-type:none;
+	padding:30px 0 0 80px;
+	margin:0;
+}
+
+.commentlist li{
+	position:relative;
+	padding:0 0 30px 0;
+}
+.commentlist li li{
+	position:relative;
+	padding:0;
+}
+
+
+.avatar-img{
+	position:absolute;
+	top:0px;
+	left:0px;
+
+}
+.avatar{display:block; float:left;}
+
+.fn{font-size:14px; font-family: 'Droid Serif', sans-serif, arial; }
+
+.commenttext{ margin-top:10px;}
+.tdate, .reply{ font-size:11px;}
+.reply a, .reply a:visited{}
+.reply a:hover{text-decoration:underline;}
+.fn a, .fn a:visited{}
+
+.comment-body{margin-left:100px;}
+.comment-body p{ margin-bottom:5px; margin-top:10px;}
+.comment-body .more{ padding:0px 0px;}
+.comment-arrow{ width:8px; height:18px; position:absolute; left:72px; top:10px;}
+#commentform {margin-bottom:20px}
+#commentform label{display:block}
+#commentform .text-input{
+	margin-bottom:8px;
+	padding:8px 5px;
+	vertical-align:middle;
+}
+#commentform .textarea{
+	margin-bottom:20px;
+	padding:8px 5px;
+	vertical-align:top;
+}
+
+/* Gallery Images */
+#gallery{ float:left; width:86%; padding-left:5px; }
+#gallery .column, #gallery .columns{ padding:0 10px!important; margin-bottom:20px;}
+.image{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	 text-align:left;
+	}
+.image img{ display:block;}
+.rollover{
+	background-color:#000;
+	display:block;
+    position:absolute;
+	z-index:10;
+	display:none;
+	cursor:pointer;
+	width:100%;
+	height:100%;
+}
+.image .zoom{
+	background:url(../images/hover-zoom.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	display:block;
+    position:absolute;
+	z-index:10;
+	display:none;
+	cursor:pointer;
+	width:100%;
+	height:100%;
+	}
+.image .text{
+	display:block;
+    position:absolute;
+	z-index:10;
+	display:none;
+	cursor:pointer;
+	width:100%;
+	height:100%;
+	text-align:center;
+	padding:23.3% 0 0 0
+	}
+.image .text h3{ margin-bottom:20px;}
+
+/* CONTACT */
+form{margin:0; padding:0;}
+fieldset{border:0px;}
+#contactform{margin:0 auto; position:relative; }
+#contactform label{display:block; width:100%; padding-bottom:9px;}
+span.error{color:red;text-align:left; font-size:11px; padding-bottom:15px; display:block;}
+#contactform input.text-input{
+	margin-bottom:20px;
+	vertical-align:middle;
+	width:40%;
+	height:20px;
+	margin-left:2px;
+}
+#contactform textarea{ width:60%; margin-left:3px;} 
+#message{ margin-left:0px; font-weight:bold;}
+#message h2	{}
+#message p{margin:6px 0px; }
+
+#contactform .button{
+	cursor:pointer;
+	margin-top:20px;
+	margin-left:-5px;
+	padding: 6px 25px 8px 15px;
+	
+	line-height:normal;
+ }
+
+/* RSVP */
+
+#rsvpform{margin:0 auto; position:relative; }
+#rsvpform label{display:inline-block; width:18%; padding-top:7px; vertical-align:top}
+#rsvpform label#msg_label{ display:block; padding-bottom:9px;}
+#rsvpform label#persons_label{ padding-top:0px;}
+span.error{color:red;text-align:left; font-size:11px; padding-bottom:15px; display:block;}
+#rsvpform input.text-input{
+	margin-bottom:20px;
+	vertical-align:middle;
+	height:20px;
+	margin-left:2px;
+}
+#rsvpform input#attending{ height:30px; margin-left:2px;}
+#rsvpform input#persons{ height:30px;}
+#rsvpform textarea{ width:70%; } 
+#message{ margin-left:0px; font-weight:bold;}
+#message h2	{}
+#message p{margin:6px 0px; }
+
+#rsvpform .button{
+	cursor:pointer;
+	margin-top:20px;
+	margin-left:-3px;
+	padding: 6px 40px 8px 15px;
+	line-height:normal;
+ }
