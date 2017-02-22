@@ -42,24 +42,17 @@
                 </div>
                 <div class="row">
                     <section id="navigation" class="twelve columns">
-                        <nav id="nav-wrap">
-                            <ul id="topnav" class="sf-menu">
-                                <li class="current"><a href="index.html">Home</a></li>
-                                <li><a href="wedding.html">Our Wedding</a>
-                                    <ul>
-                                        <li><a href="#">Only</a></li>
-                                        <li><a href="#">Example of</a></li>
-                                        <li><a href="#">The Dropdown</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="rsvp.html">RSVP</a></li>
-                                <li><a href="guestbook.html">GuestBook</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul><!-- topnav -->
-                            <div class="clear"></div>
-                        </nav><!-- nav -->	
+                        <?php
+                        $args = [
+                            'theme_location' => 'header',
+                            'container' => 'nav',
+                            'container_id' => 'nav-wrap',
+                            'menu_class'    => 'sf-menu',
+                            'menu_id'   => 'topnav'
+                        ];
+                        wp_nav_menu($args);
+                        ?>
+
                     </section>
                 </div>
                 <div class="clear"></div>

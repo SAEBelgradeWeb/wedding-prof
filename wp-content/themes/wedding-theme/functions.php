@@ -44,7 +44,8 @@ function wedding_theme_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'wedding-theme' ),
+		'header' => esc_html__( 'Header', 'wedding-theme' ),
+		'footer' => esc_html__( 'Footer', 'wedding-theme' ),
 	) );
 
 	/*
@@ -64,6 +65,8 @@ function wedding_theme_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	add_image_size('slider', 1156, 407, true);
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
