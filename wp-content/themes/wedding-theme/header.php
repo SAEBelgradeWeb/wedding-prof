@@ -17,7 +17,11 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <title><?php bloginfo('name'); ?></title>
-
+    <style>
+        .highlight-content h1 {
+            color: <?= get_theme_mod('nesto'); ?>
+        }
+    </style>
 <link rel="shortcut icon" href="<?= get_template_directory_uri();?>/images/favicon.ico" />
 <?php wp_head(); ?>
 </head>

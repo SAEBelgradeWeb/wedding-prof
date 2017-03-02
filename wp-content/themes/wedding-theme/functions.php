@@ -6,145 +6,7 @@
  *
  * @package wedding-theme
  */
-/**
- * Contains methods for customizing the theme customization screen.
- *
- * @link http://codex.wordpress.org/Theme_Customization_API
- * @since MyTheme 1.0
- */
-class MyTheme_Customize {
-    /**
-     * This hooks into 'customize_register' (available as of WP 3.4) and allows
-     * you to add new sections and controls to the Theme Customize screen.
-     *
-     * Note: To enable instant preview, we have to actually write a bit of custom
-     * javascript. See live_preview() for more.
-     *
-     * @see add_action('customize_register',$func)
-     * @param \WP_Customize_Manager $wp_customize
-     * @link http://ottopress.com/2012/how-to-leverage-the-theme-customizer-in-your-own-themes/
-     * @since MyTheme 1.0
-     */
-    public static function register ( $wp_customize ) {
-        //1. Define a new section (if desired) to the Theme Customizer
-        $wp_customize->add_section( 'mytheme_options',
-            array(
-                'title' => __( 'MyTheme Options', 'mytheme' ), //Visible title of section
-                'priority' => 35, //Determines what order this appears in
-                'capability' => 'edit_theme_options', //Capability needed to tweak
-                'description' => __('Allows you to customize some example settings for MyTheme.', 'mytheme'), //Descriptive tooltip
-            )
-        );
 
-        //2. Register new settings to the WP database...
-        $wp_customize->add_setting( 'link_textcolor', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
-            array(
-                'default' => '#2BA6CB', //Default setting/value to save
-                'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
-                'capability' => 'edit_theme_options', //Optional. Special permissions for accessing this setting.
-                'transport' => 'postMessage', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
-            )
-        );
-
-        //3. Finally, we define the control itself (which links a setting to a section and renders the HTML controls)...
-        $wp_customize->add_control( new WP_Customize_Color_Control( //Instantiate the color control class
-            $wp_customize, //Pass the $wp_customize object (required)
-            'mytheme_link_textcolor', //Set a unique ID for the control
-            array(
-                'label' => __( 'Link Color', 'mytheme' ), //Admin-visible name of the control
-                'section' => 'colors', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
-                'settings' => 'link_textcolor', //Which setting to load and manipulate (serialized is okay)
-                'priority' => 10, //Determines the order this control appears in for the specified section
-            )
-        ) );
-
-        //4. We can also change built-in settings by modifying properties. For instance, let's make some stuff use live preview JS...
-        $wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
-        $wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
-        $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-        $wp_customize->get_setting( 'background_color' )->transport = 'postMessage';
-    }
-
-    /**
-     * This will output the custom WordPress settings to the live theme's WP head.
-     *
-     * Used by hook: 'wp_head'
-     *
-     * @see add_action('wp_head',$func)
-     * @since MyTheme 1.0
-     */
-    public static function header_output() {
-        ?>
-        <!--Customizer CSS-->
-        <style type="text/css">
-            <?php self::generate_css('#site-title a', 'color', 'header_textcolor', '#'); ?>
-            <?php self::generate_css('body', 'background-color', 'background_color', '#'); ?>
-            <?php self::generate_css('a', 'color', 'link_textcolor'); ?>
-        </style>
-        <!--/Customizer CSS-->
-        <?php
-    }
-
-    /**
-     * This outputs the javascript needed to automate the live settings preview.
-     * Also keep in mind that this function isn't necessary unless your settings
-     * are using 'transport'=>'postMessage' instead of the default 'transport'
-     * => 'refresh'
-     *
-     * Used by hook: 'customize_preview_init'
-     *
-     * @see add_action('customize_preview_init',$func)
-     * @since MyTheme 1.0
-     */
-    public static function live_preview() {
-        wp_enqueue_script(
-            'mytheme-themecustomizer', // Give the script a unique ID
-            get_template_directory_uri() . '/assets/js/theme-customizer.js', // Define the path to the JS file
-            array(  'jquery', 'customize-preview' ), // Define dependencies
-            '', // Define a version (optional)
-            true // Specify whether to put in footer (leave this true)
-        );
-    }
-
-    /**
-     * This will generate a line of CSS for use in header output. If the setting
-     * ($mod_name) has no defined value, the CSS will not be output.
-     *
-     * @uses get_theme_mod()
-     * @param string $selector CSS selector
-     * @param string $style The name of the CSS *property* to modify
-     * @param string $mod_name The name of the 'theme_mod' option to fetch
-     * @param string $prefix Optional. Anything that needs to be output before the CSS property
-     * @param string $postfix Optional. Anything that needs to be output after the CSS property
-     * @param bool $echo Optional. Whether to print directly to the page (default: true).
-     * @return string Returns a single line of CSS with selectors and a property.
-     * @since MyTheme 1.0
-     */
-    public static function generate_css( $selector, $style, $mod_name, $prefix='', $postfix='', $echo=true ) {
-        $return = '';
-        $mod = get_theme_mod($mod_name);
-        if ( ! empty( $mod ) ) {
-            $return = sprintf('%s { %s:%s; }',
-                $selector,
-                $style,
-                $prefix.$mod.$postfix
-            );
-            if ( $echo ) {
-                echo $return;
-            }
-        }
-        return $return;
-    }
-}
-
-// Setup the Theme Customizer settings and controls...
-add_action( 'customize_register' , array( 'MyTheme_Customize' , 'register' ) );
-
-// Output custom CSS to live site
-add_action( 'wp_head' , array( 'MyTheme_Customize' , 'header_output' ) );
-
-// Enqueue live preview javascript in Theme Customizer admin screen
-add_action( 'customize_preview_init' , array( 'MyTheme_Customize' , 'live_preview' ) );
 
 
 if ( ! function_exists( 'wedding_theme_setup' ) ) :
@@ -207,6 +69,7 @@ function wedding_theme_setup() {
 	) ) );
 
 	add_image_size('slider', 1156, 407, true);
+	add_image_size('about', 126, 126, true);
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
@@ -244,6 +107,16 @@ function wedding_theme_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+    register_sidebar( array(
+        'name'          => esc_html__( 'Home page', 'wedding-theme' ),
+        'id'            => 'homepage',
+        'description'   => esc_html__( 'Add widgets here.', 'wedding-theme' ),
+        'before_widget' => '<div class="one_third columns">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ) );
 }
 add_action( 'widgets_init', 'wedding_theme_widgets_init' );
 
@@ -291,6 +164,70 @@ function wedding_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wedding_theme_scripts' );
 
+function register_custom_post_types() {
+
+        $labels = array(
+            'name'                  => _x( 'About them', 'Post Type General Name', 'text_domain' ),
+            'singular_name'         => _x( 'About them', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'             => __( 'About them', 'text_domain' ),
+            'name_admin_bar'        => __( 'About', 'text_domain' ),
+            'archives'              => __( 'Item Archives', 'text_domain' ),
+            'attributes'            => __( 'Item Attributes', 'text_domain' ),
+            'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+            'all_items'             => __( 'All Items', 'text_domain' ),
+            'add_new_item'          => __( 'Add New Item', 'text_domain' ),
+            'add_new'               => __( 'Add New', 'text_domain' ),
+            'new_item'              => __( 'New Item', 'text_domain' ),
+            'edit_item'             => __( 'Edit Item', 'text_domain' ),
+            'update_item'           => __( 'Update Item', 'text_domain' ),
+            'view_item'             => __( 'View Item', 'text_domain' ),
+            'view_items'            => __( 'View Items', 'text_domain' ),
+            'search_items'          => __( 'Search Item', 'text_domain' ),
+            'not_found'             => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+            'featured_image'        => __( 'Featured Image', 'text_domain' ),
+            'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+            'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+            'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+            'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+            'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+            'items_list'            => __( 'Items list', 'text_domain' ),
+            'items_list_navigation' => __( 'Items list navigation', 'text_domain' ),
+            'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
+        );
+        $args = array(
+            'label'                 => __( 'About Them', 'text_domain' ),
+            'description'           => __( 'About newlyweds', 'text_domain' ),
+            'labels'                => $labels,
+            'supports'              => array( 'title', 'editor', 'thumbnail' ),
+            'taxonomies'            => array( ),
+            'hierarchical'          => false,
+            'public'                => true,
+            'show_ui'               => true,
+            'show_in_menu'          => true,
+            'menu_position'         => 5,
+            'show_in_admin_bar'     => true,
+            'show_in_nav_menus'     => true,
+            'can_export'            => true,
+            'has_archive'           => true,
+            'exclude_from_search'   => false,
+            'publicly_queryable'    => true,
+            'capability_type'       => 'post',
+        );
+        register_post_type( 'about-them', $args );
+
+
+}
+
+
+function shorten_excerpt($content, $limit = 100) {
+    $no_char = strlen($content);
+    $content = substr($content, 0, $limit);
+    $add = ($no_char > $limit) ? "..." : "";
+    return $content . $add;
+}
+
+add_action('init', 'register_custom_post_types');
 /**
  * Implement the Custom Header feature.
  */
@@ -315,3 +252,99 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+class Features_Widget extends WP_Widget {
+
+    /**
+     * Register widget with WordPress.
+     */
+    function __construct() {
+        parent::__construct(
+            'features_widget', // Base ID
+            esc_html__( 'Features Widget', 'wedding-theme' ), // Name
+            array( 'description' => esc_html__( 'A text with title and icon', 'wedding-theme' ), ) // Args
+        );
+    }
+
+    /**
+     * Front-end display of widget.
+     *
+     * @see WP_Widget::widget()
+     *
+     * @param array $args     Widget arguments.
+     * @param array $instance Saved values from database.
+     */
+    public function widget( $args, $instance ) {
+
+        echo $args['before_widget'];
+        echo '<img src="' . get_template_directory_uri() . '/images/icons/'.$instance['icon'] . '" alt=""/>';
+        if ( ! empty( $instance['title'] ) ) {
+            echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
+        }
+        echo $instance['body'];
+        echo $args['after_widget'];
+    }
+
+    /**
+     * Back-end widget form.
+     *
+     * @see WP_Widget::form()
+     *
+     * @param array $instance Previously saved values from database.
+     */
+    public function form( $instance ) {
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'New title', 'text_domain' );
+        $body = ! empty( $instance['body'] ) ? $instance['body'] : esc_html__( '', 'text_domain' );
+        $icon = ! empty( $instance['icon'] ) ? $instance['icon'] : esc_html__( 'icon5.png', 'text_domain' );
+        ?>
+        <p>
+
+            <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+        </p>
+        <p>
+
+            <label for="<?php echo esc_attr( $this->get_field_id( 'body' ) ); ?>"><?php esc_attr_e( 'Text:', 'text_domain' ); ?></label>
+            <textarea class="widefat" name="<?php echo esc_attr( $this->get_field_name( 'body' ) ); ?>" id="<?php echo esc_attr( $this->get_field_id( 'body' ) ); ?>" cols="30" rows="10"><?php echo esc_attr( $body ); ?></textarea>
+        </p>
+        <p>
+
+            <label for="<?php echo esc_attr( $this->get_field_id( 'icon' ) ); ?>"><?php esc_attr_e( 'Icon:', 'text_domain' ); ?></label>
+
+            <select name="<?php echo esc_attr( $this->get_field_name( 'icon' ) ); ?>" id="<?php echo esc_attr( $this->get_field_id( 'icon' ) ); ?>" class="widefat" >
+                <option value="icon5.png" <?= $icon == 'icon5.png' ? "selected" : ""; ?>>Nail</option>
+                <option value="icon6.png" <?= $icon == 'icon6.png' ? "selected" : ""; ?>>Rocket</option>
+                <option value="icon7.png" <?= $icon == 'icon7.png' ? "selected" : ""; ?>>Box</option>
+            </select>
+
+        </p>
+        <?php
+    }
+
+    /**
+     * Sanitize widget form values as they are saved.
+     *
+     * @see WP_Widget::update()
+     *
+     * @param array $new_instance Values just sent to be saved.
+     * @param array $old_instance Previously saved values from database.
+     *
+     * @return array Updated safe values to be saved.
+     */
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+        $instance['body'] = ( ! empty( $new_instance['body'] ) ) ? strip_tags( $new_instance['body'] ) : '';
+        $instance['icon'] = ( ! empty( $new_instance['icon'] ) ) ? strip_tags( $new_instance['icon'] ) : '';
+
+        return $instance;
+    }
+
+} // class Foo_Widget
+
+// register Foo_Widget widget
+function register_features_widget() {
+    register_widget( 'Features_Widget' );
+}
+add_action( 'widgets_init', 'register_features_widget' );

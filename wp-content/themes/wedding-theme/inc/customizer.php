@@ -14,6 +14,32 @@ function wedding_theme_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+    $wp_customize->add_section( 'wedding_homepage_section' , array(
+        'title'    => __( 'Homepage Settings', 'wedding' ),
+        'priority' => 10
+    ) );
+
+    $wp_customize->add_setting( 'wedding_slogan' , array(
+        'default'   => 'Bla bla',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_setting( 'boja' , array(
+        'default'   => '#000000',
+        'transport' => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'slogan', array(
+        'label'    => __( 'Slogan', 'wedding' ),
+        'section'  => 'wedding_homepage_section',
+        'settings' => 'wedding_slogan',
+    ) ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'bla', array(
+        'label'    => __( 'Bla', 'wedding' ),
+        'section'  => 'wedding_homepage_section',
+        'settings' => 'boja',
+    ) ) );
 }
 add_action( 'customize_register', 'wedding_theme_customize_register' );
 
