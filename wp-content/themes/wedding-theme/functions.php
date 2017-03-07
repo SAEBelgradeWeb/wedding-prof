@@ -70,6 +70,7 @@ function wedding_theme_setup() {
 
 	add_image_size('slider', 1156, 407, true);
 	add_image_size('about', 126, 126, true);
+	add_image_size('mini-thumb', 59, 59, true);
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
@@ -116,6 +117,16 @@ function wedding_theme_widgets_init() {
         'after_widget'  => '</div>',
         'before_title'  => '<h3>',
         'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => esc_html__( 'Footer', 'wedding-theme' ),
+        'id'            => 'footer',
+        'description'   => esc_html__( 'Add widgets here.', 'wedding-theme' ),
+        'before_widget' => '<div class="four columns">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
     ) );
 }
 add_action( 'widgets_init', 'wedding_theme_widgets_init' );
@@ -343,8 +354,141 @@ class Features_Widget extends WP_Widget {
 
 } // class Foo_Widget
 
+class RecentWidgetWedding extends WP_Widget {
+
+    /**
+     * Register widget with WordPress.
+     */
+    function __construct() {
+        parent::__construct(
+            'recent_widget_wedding', // Base ID
+            esc_html__( 'Wedding Recent Posts', 'text_domain' ), // Name
+            array( 'description' => esc_html__( 'Recent posts for wedding', 'text_domain' ), ) // Args
+        );
+    }
+
+    /**
+     * Front-end display of widget.
+     *
+     * @see WP_Widget::widget()
+     *
+     * @param array $args     Widget arguments.
+     * @param array $instance Saved values from database.
+     */
+    public function widget( $args, $instance ) {
+        echo $args['before_widget'];
+        if ( ! empty( $instance['title'] ) ) {
+            echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
+        }
+
+        $arg = [
+            'post_type' => 'post',
+            'posts_per_page' => 2,
+            'order'=> 'DESC',
+            'orderby' => 'date'
+        ];
+
+        // The Query
+        $the_query = new WP_Query( $arg );
+        echo  '<ul class="rp-widget">';
+// The Loop
+        if ( $the_query->have_posts() ) {
+            while ( $the_query->have_posts() )
+            {
+                $the_query->the_post();
+                ///ovde sta stavimo
+
+
+                ?>
+                <li>
+                    <?php
+                    if(has_post_thumbnail())
+                    {
+                        the_post_thumbnail('mini-thumb');
+                    } else {
+                        echo "<img src='" . get_template_directory_uri() . "/images/content/small-img1.jpg'>";
+                    }
+                    ?>
+                    <h3><a href="#"><?php the_title() ?></a></h3>
+                    <span class="smalldate"><?php the_time('F j, Y'); ?></span>
+                    <p>
+                        <?= shorten_excerpt(get_the_excerpt(), 100);   ?>
+                    </p>
+                    <span class="clear"></span>
+                </li>
+                <?php
+            }
+            /* Restore original Post Data */
+            wp_reset_postdata();
+        } else {
+            // no posts found
+        }
+
+        echo "</ul>";
+        echo $args['after_widget'];
+    }
+
+    /**
+     * Back-end widget form.
+     *
+     * @see WP_Widget::form()
+     *
+     * @param array $instance Previously saved values from database.
+     */
+    public function form( $instance ) {
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'New title', 'text_domain' );
+        ?>
+        <p>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+        </p>
+        <?php
+    }
+
+    /**
+     * Sanitize widget form values as they are saved.
+     *
+     * @see WP_Widget::update()
+     *
+     * @param array $new_instance Values just sent to be saved.
+     * @param array $old_instance Previously saved values from database.
+     *
+     * @return array Updated safe values to be saved.
+     */
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+
+        return $instance;
+    }
+
+} // class Foo_Widget
+
+
+
 // register Foo_Widget widget
 function register_features_widget() {
     register_widget( 'Features_Widget' );
+    register_widget( 'RecentWidgetWedding' );
 }
 add_action( 'widgets_init', 'register_features_widget' );
+
+function separator_function( $atts ) {
+    return "<div class='separator'></div>";
+}
+add_shortcode( 'separator', 'separator_function' );
+
+function separatorblok_function( $atts , $content = "") {
+    if (isset($atts['boja'])) {
+        if($atts['boja'] == "plava") {
+            return "<h1 style='color: blue;'>{$content}</h1>";
+        } else if ($atts['boja'] === "crvena"){
+            return "<h1 style='color: red;'>{$content}</h1>";
+        }
+    }
+
+    return "<h1>{$content}</h1>";
+
+
+}
+add_shortcode( 'separator-blok', 'separatorblok_function' );

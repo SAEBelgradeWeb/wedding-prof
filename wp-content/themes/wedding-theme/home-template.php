@@ -31,7 +31,7 @@ get_header();
                                     while ($the_query->have_posts()) : $the_query->the_post();
                                         ?>
                                         <li>
-                                            <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('slider'); ?></a>
+                                            <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('slider', ['style' => 'width: 1159px']); ?></a>
                                             <div class="flex-caption">
                                                 <h1><?php the_title(); ?></h1>
                                                 <p>

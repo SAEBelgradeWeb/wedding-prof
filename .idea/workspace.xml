@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="23548d3d-8e2a-433a-bb0a-d03c29a4c808" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wedding-theme/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/wedding-theme/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wedding-theme/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/wedding-theme/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wedding-theme/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/wedding-theme/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wedding-theme/home-template.php" afterPath="$PROJECT_DIR$/wp-content/themes/wedding-theme/home-template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wedding-theme/inc/customizer.php" afterPath="$PROJECT_DIR$/wp-content/themes/wedding-theme/inc/customizer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wedding-theme/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/wedding-theme/page.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,15 +21,59 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home-template.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home-template.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/home-template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+            <state relative-caret-position="433">
+              <caret line="33" column="111" lean-forward="false" selection-start-line="33" selection-start-column="111" selection-end-line="33" selection-end-column="111" />
               <folding>
                 <element signature="e#6#31#0#PHP" expanded="true" />
-                <marker date="1488484785000" expanded="true" signature="1482:1538" ph="..." />
+                <marker date="1488910937000" expanded="true" signature="1381:1711" ph="..." />
+                <marker date="1488910937000" expanded="true" signature="1512:1568" ph="..." />
+                <marker date="1488910937000" expanded="true" signature="1512:1660" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="678">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/template-parts/content-page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/template-parts/content.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1488305099000" expanded="true" signature="820:826" ph="→" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -37,58 +81,31 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="284" column="31" lean-forward="false" selection-start-line="284" selection-start-column="31" selection-end-line="284" selection-end-column="31" />
+            <state relative-caret-position="678">
+              <caret line="489" column="26" lean-forward="false" selection-start-line="489" selection-start-column="26" selection-end-line="489" selection-end-column="26" />
               <folding>
-                <marker date="1488484655000" expanded="true" signature="3685:3721" ph="..." />
-                <marker date="1488484655000" expanded="true" signature="7973:7989" ph="Insert into item... " />
-                <marker date="1488484655000" expanded="true" signature="11687:11755" ph="..." />
-                <marker date="1488484655000" expanded="true" signature="12072:12140" ph="..." />
-                <marker date="1488484655000" expanded="true" signature="12465:12533" ph="..." />
+                <marker date="1488914681000" expanded="true" signature="3730:3766" ph="..." />
+                <marker date="1488914681000" expanded="true" signature="8427:8443" ph="Insert into item... " />
+                <marker date="1488914681000" expanded="true" signature="12141:12209" ph="..." />
+                <marker date="1488914681000" expanded="true" signature="12526:12594" ph="..." />
+                <marker date="1488914681000" expanded="true" signature="12919:12987" ph="..." />
+                <marker date="1488914681000" expanded="true" signature="16039:16083" ph="..." />
+                <marker date="1488914681000" expanded="true" signature="16253:16352" ph="..." />
+                <marker date="1488914681000" expanded="true" signature="16992:17059" ph="..." />
+                <marker date="1488914681000" expanded="true" signature="18477:18489" ph="..." />
+                <marker date="1488914681000" expanded="true" signature="18588:18599" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="icon1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon4.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon4.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon5.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon5.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon6.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon6.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon7.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon7.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="wedding.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/wedding.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="122" column="54" lean-forward="true" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -99,6 +116,8 @@
       <find>registe</find>
       <find>foo</find>
       <find>regis</find>
+      <find>&lt;!-- BEFORE CONTENT --&gt; 		&lt;div id=&quot;outerbeforecontent&quot;&gt;             &lt;div class=&quot;container&quot;&gt;             	&lt;div class=&quot;row&quot;&gt;                 &lt;div id=&quot;beforecontent&quot; class=&quot;twelve columns&quot;&gt;                     &lt;div id=&quot;pagetitle-container&quot;&gt;                     	&lt;h1 class=&quot;pagetitle&quot;&gt;Our Wedding&lt;/h1&gt;                     &lt;/div&gt;                 &lt;/div&gt;                 &lt;/div&gt;             &lt;/div&gt;         &lt;/div&gt;         &lt;!-- END BEFORE CONTENT --&gt;                   &lt;!-- MAIN CONTENT --&gt;         &lt;div id=&quot;outermain&quot;&gt;         	&lt;div class=&quot;container&quot;&gt;                 &lt;div class=&quot;row&quot;&gt;                                      &lt;section id=&quot;maincontent&quot; class=&quot;nine columns positionleft&quot;&gt;                              &lt;section class=&quot;content&quot;&gt; 								&lt;h2&gt;Our Story&lt;/h2&gt;                                 &lt;p&gt;Nunc lacinia, lectus sed posuere laoreet, dui velit varius enim, id feugiat risus lacus posuere purus. Quisque vitae risus enim. Quisque in massa sodales, bibendum felis sed, egestas quam. Aliquam magna leo, venenatis quis sapien eget, feugiat aliquam leo. Vivamus tellus justo, dapibus ac lectus non, pharetra molestie massa. Praesent ac justo quis nunc tempor tincidunt. Integer molestie malesuada nunc ut porta. Nullam ornare viverra nisi, ut sollicitudin urna dapibus nec.&lt;/p&gt;                                 &lt;div class=&quot;textCenter margin_bottom_large&quot;&gt;                                 &lt;img alt=&quot;&quot; src=&quot;images/content/pic1.jpg&quot; class=&quot;frame margin_right&quot; /&gt;&lt;img alt=&quot;&quot; src=&quot;images/content/pic2.jpg&quot; class=&quot;frame&quot; /&gt;                                 &lt;/div&gt;                                 &lt;p&gt;Cras lectus arcu, luctus pulvinar porta nec, sodales nec elit. Mauris convallis vitae nunc eu faucibus. Duis tempor interdum lacus ac varius. Cras sagittis nisl non orci dictum molestie. Aenean commodo, sem sit amet condimentum dictum, est leo euismod ipsum, in rutrum lectus lacus non massa. Fusce ornare hendrerit nibh sit amet dignissim. Curabitur sagittis bibendum nibh. Vestibulum nec rhoncus metus. Morbi sodales lobortis tellus quis luctus. Mauris ut venenatis orci, ut consectetur augue.&lt;/p&gt;                                 &lt;blockquote&gt;&quot;Love looks not with the eyes, but with the mind&quot;&lt;/blockquote&gt;                                 &lt;p&gt;Sed vulputate, sem nec lobortis pharetra, ante eros bibendum leo, dictum consectetur metus mauris et lectus. Fusce ultrices non purus vel hendrerit. Proin tincidunt consequat justo id malesuada.&lt;/p&gt;                                 &lt;div class=&quot;separator&quot;&gt;&lt;/div&gt;                                 &lt;div class=&quot;row story&quot;&gt;                                 	&lt;div class=&quot;one_half columns&quot;&gt;                                     	&lt;img alt=&quot;&quot; src=&quot;images/icons/icon1.png&quot; class=&quot;circle alignleft&quot; /&gt;                                         &lt;div class=&quot;indentleft&quot;&gt;                                     	&lt;h3&gt;The first time we met&lt;/h3&gt;                                         &lt;p&gt;Sed vulputate, sem nec lobortis pharetra, ante eros bibendum leo, dictum consectetur metus mauris et lectus.&lt;/p&gt;                                         &lt;/div&gt;                                     &lt;/div&gt;                                     &lt;div class=&quot;one_half columns&quot;&gt;                                     	&lt;img alt=&quot;&quot; src=&quot;images/icons/icon2.png&quot; class=&quot;circle alignleft&quot; /&gt;                                         &lt;div class=&quot;indentleft&quot;&gt;                                     	&lt;h3&gt;Our first date&lt;/h3&gt;                                         &lt;p&gt;Sed vulputate, sem nec lobortis pharetra, ante eros bibendum leo, dictum consectetur metus mauris et lectus.&lt;/p&gt;                                         &lt;/div&gt;                                     &lt;/div&gt;                                 	&lt;div class=&quot;one_half columns&quot;&gt;                                     	&lt;img alt=&quot;&quot; src=&quot;images/icons/icon3.png&quot; class=&quot;circle alignleft&quot; /&gt;                                         &lt;div class=&quot;indentleft&quot;&gt;                                     	&lt;h3&gt;Marriage proposal&lt;/h3&gt;                                         &lt;p&gt;Sed vulputate, sem nec lobortis pharetra, ante eros bibendum leo, dictum consectetur metus mauris et lectus.&lt;/p&gt;                                         &lt;/div&gt;                                     &lt;/div&gt;                                 	&lt;div class=&quot;one_half columns&quot;&gt;                                     	&lt;img alt=&quot;&quot; src=&quot;images/icons/icon4.png&quot; class=&quot;circle alignleft&quot; /&gt;                                         &lt;div class=&quot;indentleft&quot;&gt;                                       	&lt;h3&gt;Save the date&lt;/h3&gt;                                         &lt;p&gt;Sed vulputate, sem nec lobortis pharetra, ante eros bibendum leo, dictum consectetur metus mauris et lectus.&lt;/p&gt;                                         &lt;/div&gt;                                     &lt;/div&gt;                                 &lt;/div&gt;                                                                                               &lt;/section&gt;                      &lt;/section&gt;                                          &lt;aside class=&quot;three columns&quot;&gt;                     	&lt;div class=&quot;sidebar&quot;&gt;                         &lt;ul&gt;                             &lt;li class=&quot;widget-container&quot;&gt;                             	&lt;h2 class=&quot;widget-title&quot;&gt;Search&lt;/h2&gt;                                 &lt;form action=&quot;#&quot; id=&quot;searchform&quot; method=&quot;get&quot; /&gt;                                     &lt;div class=&quot;bgsearch&quot;&gt;                                     &lt;input type=&quot;text&quot; value=&quot;&quot; id=&quot;s&quot; name=&quot;s&quot; /&gt;                                      &lt;input type=&quot;submit&quot; value=&quot;&quot; class=&quot;searchbutton&quot; /&gt;                                     &lt;/div&gt;                                 &lt;/form&gt;                                 &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;                             &lt;/li&gt;                             &lt;li class=&quot;widget-container&quot;&gt;                                 &lt;h2 class=&quot;widget-title&quot;&gt;Categories&lt;/h2&gt;                                 &lt;ul&gt;                                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Wedding Ceremony&lt;/a&gt;&lt;/li&gt;                                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Our Blog&lt;/a&gt;&lt;/li&gt;                                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Marriage Bliss&lt;/a&gt;&lt;/li&gt;                                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Guests Reservation&lt;/a&gt;&lt;/li&gt;                                 &lt;/ul&gt;                             &lt;/li&gt;                             &lt;li class=&quot;widget-container&quot;&gt;                                 &lt;h2 class=&quot;widget-title&quot;&gt;Recent Post&lt;/h2&gt;                                 &lt;ul class=&quot;rp-widget&quot;&gt;                                     &lt;li&gt;                                         &lt;img src=&quot;images/content/small-img1.jpg&quot; alt=&quot;&quot; /&gt;                                         &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;This is about our wedding event&lt;/a&gt;&lt;/h3&gt;                                         &lt;span class=&quot;smalldate&quot;&gt;April 27, 2012&lt;/span&gt;                                         &lt;span class=&quot;clear&quot;&gt;&lt;/span&gt;                                     &lt;/li&gt;                                     &lt;li class=&quot;last&quot;&gt;                                         &lt;img src=&quot;images/content/small-img2.jpg&quot; alt=&quot;&quot; /&gt;                                         &lt;h3&gt;&lt;a href=&quot;#&quot;&gt;We are getting married part II&lt;/a&gt;&lt;/h3&gt;                                         &lt;span class=&quot;smalldate&quot;&gt;April 22, 2012&lt;/span&gt;                                         &lt;span class=&quot;clear&quot;&gt;&lt;/span&gt;                                     &lt;/li&gt;                                 &lt;/ul&gt;                             &lt;/li&gt;                             &lt;li class=&quot;widget-container&quot;&gt;                                 &lt;h2 class=&quot;widget-title&quot;&gt;Archives&lt;/h2&gt;                                 &lt;ul&gt;                                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;August 2013&lt;/a&gt;&lt;/li&gt;                                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;June 2013&lt;/a&gt;&lt;/li&gt;                                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;May 2013&lt;/a&gt;&lt;/li&gt;                                     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;February 2013&lt;/a&gt;&lt;/li&gt;                                 &lt;/ul&gt;                             &lt;/li&gt;                         &lt;/ul&gt;                         &lt;/div&gt;                     &lt;/aside&gt;                 &lt;/div&gt;             &lt;/div&gt;         &lt;/div&gt;         &lt;!-- END MAIN CONTENT --&gt;</find>
+      <find>separato</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,7 +128,6 @@
       <list>
         <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/style.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/page.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/js/theme-customizer.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/MyThemeCustomize.php" />
@@ -117,8 +135,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/inc/customizer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/home-template.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wedding-theme/page.php" />
       </list>
     </option>
   </component>
@@ -128,12 +148,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="232" />
-    <option name="y" value="63" />
-    <option name="width" value="1440" />
-    <option name="height" value="795" />
+    <option name="x" value="156" />
+    <option name="y" value="23" />
+    <option name="width" value="1573" />
+    <option name="height" value="975" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -150,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,6 +340,36 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding-theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -376,13 +430,38 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="template-parts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding-theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="inc" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -487,35 +566,37 @@
       <workItem from="1487267656343" duration="2441000" />
       <workItem from="1487697756679" duration="6634000" />
       <workItem from="1488302743108" duration="3394000" />
-      <workItem from="1488472709765" duration="7950000" />
+      <workItem from="1488472709765" duration="8297000" />
+      <workItem from="1488800889070" duration="248000" />
+      <workItem from="1488907417138" duration="6362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20419000" />
+    <option name="totallyTimeSpent" value="27376000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="232" y="63" width="1440" height="795" extended-state="0" />
-    <editor active="true" />
+    <frame x="156" y="23" width="1573" height="975" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2732475" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34421948" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,6 +610,68 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/home-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#31#0#PHP" expanded="true" />
+            <marker date="1488910937000" expanded="true" signature="1381:1711" ph="..." />
+            <marker date="1488910937000" expanded="true" signature="1512:1568" ph="..." />
+            <marker date="1488910937000" expanded="true" signature="1512:1660" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9730">
+          <caret line="284" column="31" lean-forward="false" selection-start-line="284" selection-start-column="31" selection-end-line="284" selection-end-column="31" />
+          <folding>
+            <marker date="1488914681000" expanded="true" signature="3730:3766" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="8427:8443" ph="Insert into item... " />
+            <marker date="1488914681000" expanded="true" signature="12141:12209" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="12526:12594" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="12919:12987" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="16039:16083" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="16253:16352" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="16992:17059" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="18477:18489" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="18588:18599" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon6.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon7.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
@@ -542,11 +685,16 @@
         <state relative-caret-position="10675">
           <caret line="311" column="0" lean-forward="false" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
           <folding>
-            <marker date="1488484655000" expanded="true" signature="3685:3721" ph="..." />
-            <marker date="1488484655000" expanded="true" signature="7973:7989" ph="Insert into item... " />
-            <marker date="1488484655000" expanded="true" signature="11687:11755" ph="..." />
-            <marker date="1488484655000" expanded="true" signature="12072:12140" ph="..." />
-            <marker date="1488484655000" expanded="true" signature="12465:12533" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="3730:3766" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="8427:8443" ph="Insert into item... " />
+            <marker date="1488914681000" expanded="true" signature="12141:12209" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="12526:12594" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="12919:12987" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="16039:16083" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="16253:16352" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="16992:17059" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="18477:18489" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="18588:18599" ph="..." />
           </folding>
         </state>
       </provider>
@@ -555,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -563,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -571,7 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5005">
           <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -579,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
           <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
           <caret line="25" column="73" lean-forward="false" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,9 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4795">
           <caret line="137" column="0" lean-forward="false" selection-start-line="136" selection-start-column="8" selection-end-line="199" selection-end-column="33" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,7 +754,9 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#31#0#PHP" expanded="true" />
-            <marker date="1488484785000" expanded="true" signature="1482:1538" ph="..." />
+            <marker date="1488910937000" expanded="true" signature="1381:1711" ph="..." />
+            <marker date="1488910937000" expanded="true" signature="1512:1568" ph="..." />
+            <marker date="1488910937000" expanded="true" signature="1512:1660" ph="..." />
           </folding>
         </state>
       </provider>
@@ -639,13 +780,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -657,13 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
           <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/template-parts/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -679,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
           <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,7 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-692">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,7 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,7 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
           <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,17 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="130" column="18" lean-forward="false" selection-start-line="136" selection-start-column="8" selection-end-line="199" selection-end-column="33" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,7 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
           <caret line="25" column="73" lean-forward="false" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -772,6 +880,11 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon6.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -782,33 +895,101 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/images/icons/icon5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/template-parts/content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="284" column="31" lean-forward="false" selection-start-line="284" selection-start-column="31" selection-end-line="284" selection-end-column="31" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488484655000" expanded="true" signature="3685:3721" ph="..." />
-            <marker date="1488484655000" expanded="true" signature="7973:7989" ph="Insert into item... " />
-            <marker date="1488484655000" expanded="true" signature="11687:11755" ph="..." />
-            <marker date="1488484655000" expanded="true" signature="12072:12140" ph="..." />
-            <marker date="1488484655000" expanded="true" signature="12465:12533" ph="..." />
+            <marker date="1488305099000" expanded="true" signature="820:826" ph="→" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="235" column="61" lean-forward="false" selection-start-line="235" selection-start-column="61" selection-end-line="235" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/template-parts/content-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/home-template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+        <state relative-caret-position="433">
+          <caret line="33" column="111" lean-forward="false" selection-start-line="33" selection-start-column="111" selection-end-line="33" selection-end-column="111" />
           <folding>
             <element signature="e#6#31#0#PHP" expanded="true" />
-            <marker date="1488484785000" expanded="true" signature="1482:1538" ph="..." />
+            <marker date="1488910937000" expanded="true" signature="1381:1711" ph="..." />
+            <marker date="1488910937000" expanded="true" signature="1512:1568" ph="..." />
+            <marker date="1488910937000" expanded="true" signature="1512:1660" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/wedding.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="122" column="54" lean-forward="true" selection-start-line="122" selection-start-column="54" selection-end-line="122" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="487" column="9" lean-forward="false" selection-start-line="487" selection-start-column="1" selection-end-line="487" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/wedding/styles/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="489" column="26" lean-forward="false" selection-start-line="489" selection-start-column="26" selection-end-line="489" selection-end-column="26" />
+          <folding>
+            <marker date="1488914681000" expanded="true" signature="3730:3766" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="8427:8443" ph="Insert into item... " />
+            <marker date="1488914681000" expanded="true" signature="12141:12209" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="12526:12594" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="12919:12987" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="16039:16083" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="16253:16352" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="16992:17059" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="18477:18489" ph="..." />
+            <marker date="1488914681000" expanded="true" signature="18588:18599" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wedding-theme/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
